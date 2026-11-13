@@ -31,6 +31,8 @@ public class QuickSort implements SortAlgorithm {
     @Override
     public void sort(SortArray arr) {
         // TODO: write quicksort here (add helper methods below)
+        if(arr.size()==0||arr.size()==1){return;}
+        //int ind = arr.get(arr.size()/2);
 
     }
 }
