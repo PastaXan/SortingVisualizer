@@ -39,6 +39,8 @@ public class InsertionSort implements SortAlgorithm {
                 if (arr.less(j, j - 1)) {
                     arr.swap(j, j - 1);
                 }
+                else{break;}
+
             }
         }
     }

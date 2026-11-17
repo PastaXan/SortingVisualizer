@@ -40,15 +40,18 @@ public class ShellSort implements SortAlgorithm {
         }
 
         while(h>=1) {
-            h=h/3;
-            for (int i = 0; i < h; i++) {
-                System.out.println(i);
+            for (int i = 0; i < h; i++) {//classes are for i+through "h"
+                System.out.println(i +" "+h);
                 for (int j = i; j < arr.size()-h; j+=h) {
-                    if (arr.less(j, j + h)) {
-                        arr.swap(j, j + h);
+                    for (int k=j+h; k>i; k-=h) {
+                        if (arr.less(k, k - h)) {
+                            arr.swap(k, k - h);
+                        }
+                        else{break;}
                     }
                 }
             }
+            h=h/3;
         }
     }
 }
