@@ -79,8 +79,8 @@ public class SortVisualizer extends JFrame {
         return list;
     }
 
-    private static final int MAX_ITEMS = 100;
-    private static final int MAX_STEPS = 40000;
+    private static final int MAX_ITEMS = 1000;
+    private static final int MAX_STEPS = 400000;
     private static final long TIMEOUT_MS = 3000;
     private static final String[] PATTERNS = { "Random", "Already sorted", "Reversed", "Nearly sorted", "Few unique values" };
 
@@ -101,7 +101,7 @@ public class SortVisualizer extends JFrame {
     private final JButton playBtn = new JButton("Play");
     private final JButton stepBtn = new JButton("Step  >");
     private final JButton endBtn = new JButton("End  >|");
-    private final JSlider speedSlider = new JSlider(0, 100, 45);
+    private final JSlider speedSlider = new JSlider(0, 300, 45);
     private final JCheckBox soundBox = new JCheckBox("Sound (comparisons)", true);
     private final JButton traceBtn = new JButton("Trace Table");
     private final JButton stopSoundBtn = new JButton("Stop Sound");
